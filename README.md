@@ -47,7 +47,7 @@ Boxplot shows that London and Newcastle have the highest and lowest average paid
 
 **Median salary by position type**
                                                                                                                                           
-![fig4](https://user-images.githubusercontent.com/74214807/217851203-91617cb4-97e4-47de-9e08-aaf417632b63.png)
+<img src = "https://user-images.githubusercontent.com/74214807/217851203-91617cb4-97e4-47de-9e08-aaf417632b63.png" width="857" height="571" />
 
 Bar plot shows the average yearly salary for different job positions and for salary security type (long term security vs short term). The plot shows that gnerally shorter term security is higher paid vs long term. Annual salary scales as expected with increasing position apart from mid level (could point to inaccurately choosing list of words categorising a mid level position instead of senior position)
 
