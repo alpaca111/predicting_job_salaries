@@ -36,3 +36,18 @@ After the data cleaning, we were left with 1,392 unique job listings.
 Chart shows the distribution of the yearly salary for the different categories of a quoted salary. For example a salary quoted as a daily rate is converted to a yearly salary as with others to be able to compare. Most of the salaries are at the lower end with a few very high values. The median salary is £38,300. Can see that the distribution is positively skewed showing that most salaries are at the lower end with a long tail of higher yearly salaries.
 
 Can see that salaries quoted in daily format tend to be higher than the salaries which are quoted hourly, weekly or monthly. This implies that how the salary is quoted could be a good predictor of salary.
+
+**Salary Distribution by location**
+
+![fig3](https://user-images.githubusercontent.com/74214807/217849693-df99e205-64fd-4a51-a530-dc7268042e86.png)
+
+The plot shows salary distribution for every city, ordered by the median salary (shown by the line). Can see that London has the largest number of data points and the highest median salary while Newcastle has lowest paid salaries. City should be a reasonable predictor for salary
+
+Boxplot shows that London and Newcastle have the highest and lowest average paid salaries respectively. Expect that both will give the largest coefficients for a simple logisitical regression model on just city as a feature, for each class, 'high' and 'low' respectively.
+
+**Median salary by position type**
+
+Bar plot shows the average yearly salary for different job positions and for salary security type (long term security vs short term). The plot shows that gnerally shorter term security is higher paid vs long term. Annual salary scales as expected with increasing position apart from mid level (could point to inaccurately choosing list of words categorising a mid level position instead of senior position)
+
+## Modelling
+
