@@ -39,13 +39,15 @@ Can see that salaries quoted in daily format tend to be higher than the salaries
 
 **Salary Distribution by location**
 
-![fig3](https://user-images.githubusercontent.com/74214807/217849693-df99e205-64fd-4a51-a530-dc7268042e86.png)
+<img src = "https://user-images.githubusercontent.com/74214807/217849693-df99e205-64fd-4a51-a530-dc7268042e86.png width="991" height="720" />
 
 The plot shows salary distribution for every city, ordered by the median salary (shown by the line). Can see that London has the largest number of data points and the highest median salary while Newcastle has lowest paid salaries. City should be a reasonable predictor for salary
 
 Boxplot shows that London and Newcastle have the highest and lowest average paid salaries respectively. Expect that both will give the largest coefficients for a simple logisitical regression model on just city as a feature, for each class, 'high' and 'low' respectively.
 
 **Median salary by position type**
+                                                                                                                                          
+![fig4](https://user-images.githubusercontent.com/74214807/217851203-91617cb4-97e4-47de-9e08-aaf417632b63.png)
 
 Bar plot shows the average yearly salary for different job positions and for salary security type (long term security vs short term). The plot shows that gnerally shorter term security is higher paid vs long term. Annual salary scales as expected with increasing position apart from mid level (could point to inaccurately choosing list of words categorising a mid level position instead of senior position)
 
