@@ -30,6 +30,7 @@ After the data cleaning, we were left with 1,392 unique job listings.
 
 
 **Salary Distribution**
+
 <img src="https://user-images.githubusercontent.com/74214807/217844392-f9836162-57d0-46e6-a90c-e92d0a55c9cf.png" width="1065" height="339" />
 
 
