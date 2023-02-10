@@ -27,8 +27,6 @@ After the data cleaning, we were left with 1,392 unique job listings.
 
 ## Exploratory Data Analysis
 
-
-
 **Salary Distribution**
 <img src = "https://user-images.githubusercontent.com/74214807/217845194-ff7356e9-5d9e-4852-9a68-6224d055bc6f.png" width="888" height="640" />
 
@@ -53,3 +51,29 @@ Bar plot shows the average yearly salary for different job positions and for sal
 
 ## Modelling
 
+To answer the question about which industry factors are most important in predicting the salary amounts for data related jobs, we created a model which tries to predict whether a salary is 'high' or 'low'. This was converted into a binary classification problem to help remove some of the noise of the extreme salaries. The high - low salary split was done on the Median to have a balanced dataset - giving a baseline accuracy of around 50%. The model predictions were based on the following factors:
+
+- Location
+- Key words in the job title
+- Salary pay type (e.g. annual, daily..)
+- Salary security (feature engineered from salary pay type)
+- Position level (entry, mid-level, intermediate senior)
+- 
+A 'high' salary is defined as being above the median salary of £38,300 and a 'low' salary is below.
+
+Six different models were tuned and tested. The model was chosen based on optimal accuracy score while also having the highest precision such that the chosen model gives lowest percentage of False Positives. The main reason for also optimising on precision was due to the fact that we wanted to limit the dissapointment factor when telling someone they should be receiving a 'high' salary from a given job when in fact they would be receiving a 'low' salary job.
+
+The chosen model was a randomforest classifier type and it was able to predict correctly whether a salary is 'high' or 'low' based on the above factors 75% of the time.
+
+The bar chart above shows the top 20 feature importances for the Random Forest model. Words from the job title make up 14 out of the 20 most important features from the model for example: analyst, engineer, data, senior, architect. The region London is the 8th most important feature - this makes sense given that salaries tend to be higher in London.
+
+## Improvements 
+
+- Further feature engineering of predictor variables
+- Incude more features - i.e could include Job summary and apply NLP. I presume this would add value to model performance as the jobtitle key words dominated in terms of importance and job summary would have more detailed keywords to choose from. - Further gridsearch parameter tuning
+- Increased data pool (only had 1392 data points)
+- Investigate outliers thoroughly and treat accordingly to be able to apply a regression model instead of classification with 2 categories.
+
+## Limitations
+
+The data for this project was collected in January 2021. It does not take into account any trends in the job market over time and therefore the model will not reflect any changes over time e.g. a shift to remote working.
