@@ -64,7 +64,7 @@ A 'high' salary is defined as being above the median salary of £38,300 and a 'l
 Six different models were tuned and tested. The model was chosen based on optimal accuracy score while also having the highest precision such that the chosen model gives lowest percentage of False Positives. The main reason for also optimising on precision was due to the fact that we wanted to limit the dissapointment factor when telling someone they should be receiving a 'high' salary from a given job when in fact they would be receiving a 'low' salary job.
 
 The chosen model was a randomforest classifier type and it was able to predict correctly whether a salary is 'high' or 'low' based on the above factors 75% of the time.
-<img src = "https://user-images.githubusercontent.com/74214807/218445274-2a2aa618-a2a3-42ef-a167-91ad921505ad.png" width="1400" height="1000" />
+<img src = "https://user-images.githubusercontent.com/74214807/218445274-2a2aa618-a2a3-42ef-a167-91ad921505ad.png" />
 
 
 The bar chart above shows the top 20 feature importances for the Random Forest model. Words from the job title make up 14 out of the 20 most important features from the model for example: analyst, engineer, data, senior, architect. The region London is the 8th most important feature - this makes sense given that salaries tend to be higher in London.
