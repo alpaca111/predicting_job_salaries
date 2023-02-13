@@ -65,7 +65,7 @@ Six different models were tuned and tested. The model was chosen based on optima
 
 The chosen model was a randomforest classifier type and it was able to predict correctly whether a salary is 'high' or 'low' based on the above factors 75% of the time.
 
-<img src = "https://user-images.githubusercontent.com/74214807/218445895-52cb252f-4975-43c6-a002-a81d0076cfab.png) width="3110"  height="1757" />
+<img src = "https://user-images.githubusercontent.com/74214807/218445895-52cb252f-4975-43c6-a002-a81d0076cfab.png" width="3110"  height="1757" />
 
 
 The bar chart above shows the top 20 feature importances for the Random Forest model. Words from the job title make up 14 out of the 20 most important features from the model for example: analyst, engineer, data, senior, architect. The region London is the 8th most important feature - this makes sense given that salaries tend to be higher in London.
