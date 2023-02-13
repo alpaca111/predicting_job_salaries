@@ -4,6 +4,11 @@ We wanted to understand which industry factors are most important in predicting 
 
 Once the data was collected, cleaned and feature engineered we built a predictive model with salary being the target variable. Several models were validated to identify the best performer we then evaluated the chosen model to understand the most important predictors for salary.
 
+### Jupyter Notebook files
+- [Web scraping](https://github.com/alpaca111/predicting_salaries/blob/main/webscraping_data.ipynb)
+- [Data cleaning](https://github.com/alpaca111/predicting_salaries/blob/main/cleaning_data.ipynb)
+- [EDA and modelling](https://github.com/alpaca111/predicting_salaries/blob/main/EDA_modelling.ipynb)
+
 ### Acquiring the date
 
 The job data was acquired by scraping www.indeed.co.uk using BeautifulSoup. Searches were performed on different data related job titles for key cities in the United Kingdom. For each job listing the following components were collected :
